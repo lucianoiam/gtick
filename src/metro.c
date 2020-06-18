@@ -87,7 +87,7 @@ static const GtkActionEntry actions[] = {
 };
 
 static const GtkToggleActionEntry toggle_actions[] = {
-  { "Start", NULL, N_("Start"), "<control>S", N_("Start the metronome"), G_CALLBACK(metro_toggle_cb), FALSE },
+  { "Start", NULL, N_("Start"), "space", N_("Start the metronome"), G_CALLBACK(metro_toggle_cb), FALSE },
   { "VisualTick", NULL, N_("_Visual Tick"), "<control>V", NULL, G_CALLBACK(toggle_visualtick_cb), FALSE },
   { "AccentTable", NULL, N_("_Accent Table"), "<control>A", NULL, G_CALLBACK(toggle_accenttable_cb), FALSE },
   { "Profiles", NULL, N_("Pr_ofiles"), "<control>O", NULL, G_CALLBACK(toggle_profiles_cb), FALSE },
