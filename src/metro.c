@@ -1877,7 +1877,8 @@ metro_t* metro_new(void) {
   /* Profiles */
   metro->profileframe = profiles_new(metro);
   gtk_box_pack_start(GTK_BOX(vbox), metro->profileframe, FALSE, TRUE, 0);
-
+  gtk_widget_set_size_request(metro->profileframe, -1, 240);
+  
   /* General UI Code */
   hbox = gtk_hbox_new (FALSE, 10);
   gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
